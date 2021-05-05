@@ -1,0 +1,21 @@
+|Assi1
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => component1:inst5.X
+Y => component1:inst5.Y
+Z => component1:inst5.Z
+C => inst3.IN0
+C => inst4.IN1
+D => inst4.IN0
+
+
+|Assi1|component1:inst5
+X => A.IN1
+X => B.IN1
+Y => A.IN0
+Y => B.IN0
+Z => A.IN1
+Z => B.IN1
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+
+

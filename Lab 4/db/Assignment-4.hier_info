@@ -1,0 +1,62 @@
+|comparator_4_bit
+a0 => comparator_1_bit:c0.a
+a1 => comparator_1_bit:c1.a
+a2 => comparator_1_bit:c2.a
+a3 => comparator_1_bit:c3.a
+b0 => comparator_1_bit:c0.b
+b1 => comparator_1_bit:c1.b
+b2 => comparator_1_bit:c2.b
+b3 => comparator_1_bit:c3.b
+aisgr <= aisgr.DB_MAX_OUTPUT_PORT_TYPE
+bisgr <= bisgr.DB_MAX_OUTPUT_PORT_TYPE
+iseq <= iseq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparator_4_bit|comparator_1_bit:c0
+a => aisgr.IN0
+a => iseq.IN0
+a => bisgr.IN0
+b => bisgr.IN1
+b => iseq.IN1
+b => aisgr.IN1
+aisgr <= aisgr.DB_MAX_OUTPUT_PORT_TYPE
+bisgr <= bisgr.DB_MAX_OUTPUT_PORT_TYPE
+iseq <= iseq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparator_4_bit|comparator_1_bit:c1
+a => aisgr.IN0
+a => iseq.IN0
+a => bisgr.IN0
+b => bisgr.IN1
+b => iseq.IN1
+b => aisgr.IN1
+aisgr <= aisgr.DB_MAX_OUTPUT_PORT_TYPE
+bisgr <= bisgr.DB_MAX_OUTPUT_PORT_TYPE
+iseq <= iseq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparator_4_bit|comparator_1_bit:c2
+a => aisgr.IN0
+a => iseq.IN0
+a => bisgr.IN0
+b => bisgr.IN1
+b => iseq.IN1
+b => aisgr.IN1
+aisgr <= aisgr.DB_MAX_OUTPUT_PORT_TYPE
+bisgr <= bisgr.DB_MAX_OUTPUT_PORT_TYPE
+iseq <= iseq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparator_4_bit|comparator_1_bit:c3
+a => aisgr.IN0
+a => iseq.IN0
+a => bisgr.IN0
+b => bisgr.IN1
+b => iseq.IN1
+b => aisgr.IN1
+aisgr <= aisgr.DB_MAX_OUTPUT_PORT_TYPE
+bisgr <= bisgr.DB_MAX_OUTPUT_PORT_TYPE
+iseq <= iseq.DB_MAX_OUTPUT_PORT_TYPE
+
+

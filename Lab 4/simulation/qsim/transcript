@@ -1,0 +1,30 @@
+# do Assignment-4.do
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 13:08:17 on May 04,2021
+# vlog -work work Assignment-4.vo 
+# -- Compiling module comparator_4_bit
+# 
+# Top level modules:
+# 	comparator_4_bit
+# End time: 13:08:17 on May 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 13:08:17 on May 04,2021
+# vlog -work work Waveform1.vwf.vt 
+# -- Compiling module comparator_4_bit_vlg_vec_tst
+# 
+# Top level modules:
+# 	comparator_4_bit_vlg_vec_tst
+# End time: 13:08:17 on May 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.comparator_4_bit_vlg_vec_tst -voptargs=""+acc"" 
+# Start time: 13:08:17 on May 04,2021
+# Loading work.comparator_4_bit_vlg_vec_tst
+# Loading work.comparator_4_bit
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# ** Note: $finish    : Waveform1.vwf.vt(63)
+#    Time: 1 us  Iteration: 0  Instance: /comparator_4_bit_vlg_vec_tst
+# End time: 13:08:17 on May 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

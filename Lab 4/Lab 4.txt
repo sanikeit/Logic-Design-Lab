@@ -1,0 +1,1 @@
+Implement a 4-bit digital comparator using a structural VHDL model.

@@ -1,0 +1,347 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition"
+
+// DATE "05/04/2021 13:08:15"
+
+// 
+// Device: Altera EP4CGX15BF14C6 Package FBGA169
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module comparator_4_bit (
+	a0,
+	a1,
+	a2,
+	a3,
+	b0,
+	b1,
+	b2,
+	b3,
+	aisgr,
+	bisgr,
+	iseq);
+input 	a0;
+input 	a1;
+input 	a2;
+input 	a3;
+input 	b0;
+input 	b1;
+input 	b2;
+input 	b3;
+output 	aisgr;
+output 	bisgr;
+output 	iseq;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \aisgr~output_o ;
+wire \bisgr~output_o ;
+wire \iseq~output_o ;
+wire \a3~input_o ;
+wire \a2~input_o ;
+wire \b2~input_o ;
+wire \b3~input_o ;
+wire \aisgr~0_combout ;
+wire \a1~input_o ;
+wire \a0~input_o ;
+wire \b0~input_o ;
+wire \b1~input_o ;
+wire \aisgr~1_combout ;
+wire \aisgr~2_combout ;
+wire \aisgr~3_combout ;
+wire \bisgr~0_combout ;
+wire \bisgr~1_combout ;
+wire \bisgr~2_combout ;
+wire \iseq~0_combout ;
+wire \iseq~1_combout ;
+
+
+cycloneiv_io_obuf \aisgr~output (
+	.i(\aisgr~3_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\aisgr~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \aisgr~output .bus_hold = "false";
+defparam \aisgr~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneiv_io_obuf \bisgr~output (
+	.i(\bisgr~2_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\bisgr~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \bisgr~output .bus_hold = "false";
+defparam \bisgr~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneiv_io_obuf \iseq~output (
+	.i(!\iseq~1_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\iseq~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \iseq~output .bus_hold = "false";
+defparam \iseq~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneiv_io_ibuf \a3~input (
+	.i(a3),
+	.ibar(gnd),
+	.o(\a3~input_o ));
+// synopsys translate_off
+defparam \a3~input .bus_hold = "false";
+defparam \a3~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneiv_io_ibuf \a2~input (
+	.i(a2),
+	.ibar(gnd),
+	.o(\a2~input_o ));
+// synopsys translate_off
+defparam \a2~input .bus_hold = "false";
+defparam \a2~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneiv_io_ibuf \b2~input (
+	.i(b2),
+	.ibar(gnd),
+	.o(\b2~input_o ));
+// synopsys translate_off
+defparam \b2~input .bus_hold = "false";
+defparam \b2~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneiv_io_ibuf \b3~input (
+	.i(b3),
+	.ibar(gnd),
+	.o(\b3~input_o ));
+// synopsys translate_off
+defparam \b3~input .bus_hold = "false";
+defparam \b3~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneiv_lcell_comb \aisgr~0 (
+// Equation(s):
+// \aisgr~0_combout  = (\a3~input_o  & (((\a2~input_o  & !\b2~input_o )) # (!\b3~input_o ))) # (!\a3~input_o  & (\a2~input_o  & (!\b2~input_o  & !\b3~input_o )))
+
+	.dataa(\a3~input_o ),
+	.datab(\a2~input_o ),
+	.datac(\b2~input_o ),
+	.datad(\b3~input_o ),
+	.cin(gnd),
+	.combout(\aisgr~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \aisgr~0 .lut_mask = 16'h08AE;
+defparam \aisgr~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneiv_io_ibuf \a1~input (
+	.i(a1),
+	.ibar(gnd),
+	.o(\a1~input_o ));
+// synopsys translate_off
+defparam \a1~input .bus_hold = "false";
+defparam \a1~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneiv_io_ibuf \a0~input (
+	.i(a0),
+	.ibar(gnd),
+	.o(\a0~input_o ));
+// synopsys translate_off
+defparam \a0~input .bus_hold = "false";
+defparam \a0~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneiv_io_ibuf \b0~input (
+	.i(b0),
+	.ibar(gnd),
+	.o(\b0~input_o ));
+// synopsys translate_off
+defparam \b0~input .bus_hold = "false";
+defparam \b0~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneiv_io_ibuf \b1~input (
+	.i(b1),
+	.ibar(gnd),
+	.o(\b1~input_o ));
+// synopsys translate_off
+defparam \b1~input .bus_hold = "false";
+defparam \b1~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneiv_lcell_comb \aisgr~1 (
+// Equation(s):
+// \aisgr~1_combout  = (\a1~input_o  & (((\a0~input_o  & !\b0~input_o )) # (!\b1~input_o ))) # (!\a1~input_o  & (\a0~input_o  & (!\b0~input_o  & !\b1~input_o )))
+
+	.dataa(\a1~input_o ),
+	.datab(\a0~input_o ),
+	.datac(\b0~input_o ),
+	.datad(\b1~input_o ),
+	.cin(gnd),
+	.combout(\aisgr~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \aisgr~1 .lut_mask = 16'h08AE;
+defparam \aisgr~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneiv_lcell_comb \aisgr~2 (
+// Equation(s):
+// \aisgr~2_combout  = (\a2~input_o  & (\b2~input_o  & (\a3~input_o  $ (!\b3~input_o )))) # (!\a2~input_o  & (!\b2~input_o  & (\a3~input_o  $ (!\b3~input_o ))))
+
+	.dataa(\a2~input_o ),
+	.datab(\a3~input_o ),
+	.datac(\b3~input_o ),
+	.datad(\b2~input_o ),
+	.cin(gnd),
+	.combout(\aisgr~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \aisgr~2 .lut_mask = 16'h8241;
+defparam \aisgr~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneiv_lcell_comb \aisgr~3 (
+// Equation(s):
+// \aisgr~3_combout  = (\aisgr~0_combout ) # ((\aisgr~1_combout  & \aisgr~2_combout ))
+
+	.dataa(\aisgr~0_combout ),
+	.datab(\aisgr~1_combout ),
+	.datac(\aisgr~2_combout ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\aisgr~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \aisgr~3 .lut_mask = 16'hEAEA;
+defparam \aisgr~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneiv_lcell_comb \bisgr~0 (
+// Equation(s):
+// \bisgr~0_combout  = (\b3~input_o  & (((\b2~input_o  & !\a2~input_o )) # (!\a3~input_o ))) # (!\b3~input_o  & (\b2~input_o  & (!\a2~input_o  & !\a3~input_o )))
+
+	.dataa(\b3~input_o ),
+	.datab(\b2~input_o ),
+	.datac(\a2~input_o ),
+	.datad(\a3~input_o ),
+	.cin(gnd),
+	.combout(\bisgr~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \bisgr~0 .lut_mask = 16'h08AE;
+defparam \bisgr~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneiv_lcell_comb \bisgr~1 (
+// Equation(s):
+// \bisgr~1_combout  = (\b1~input_o  & (((\b0~input_o  & !\a0~input_o )) # (!\a1~input_o ))) # (!\b1~input_o  & (\b0~input_o  & (!\a0~input_o  & !\a1~input_o )))
+
+	.dataa(\b1~input_o ),
+	.datab(\b0~input_o ),
+	.datac(\a0~input_o ),
+	.datad(\a1~input_o ),
+	.cin(gnd),
+	.combout(\bisgr~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \bisgr~1 .lut_mask = 16'h08AE;
+defparam \bisgr~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneiv_lcell_comb \bisgr~2 (
+// Equation(s):
+// \bisgr~2_combout  = (\bisgr~0_combout ) # ((\aisgr~2_combout  & \bisgr~1_combout ))
+
+	.dataa(\bisgr~0_combout ),
+	.datab(\aisgr~2_combout ),
+	.datac(\bisgr~1_combout ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\bisgr~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \bisgr~2 .lut_mask = 16'hEAEA;
+defparam \bisgr~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneiv_lcell_comb \iseq~0 (
+// Equation(s):
+// \iseq~0_combout  = (\a1~input_o  & ((\a0~input_o  $ (\b0~input_o )) # (!\b1~input_o ))) # (!\a1~input_o  & ((\b1~input_o ) # (\a0~input_o  $ (\b0~input_o ))))
+
+	.dataa(\a1~input_o ),
+	.datab(\b1~input_o ),
+	.datac(\a0~input_o ),
+	.datad(\b0~input_o ),
+	.cin(gnd),
+	.combout(\iseq~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \iseq~0 .lut_mask = 16'h6FF6;
+defparam \iseq~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneiv_lcell_comb \iseq~1 (
+// Equation(s):
+// \iseq~1_combout  = (\iseq~0_combout ) # (!\aisgr~2_combout )
+
+	.dataa(\iseq~0_combout ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\aisgr~2_combout ),
+	.cin(gnd),
+	.combout(\iseq~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \iseq~1 .lut_mask = 16'hAAFF;
+defparam \iseq~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign aisgr = \aisgr~output_o ;
+
+assign bisgr = \bisgr~output_o ;
+
+assign iseq = \iseq~output_o ;
+
+endmodule

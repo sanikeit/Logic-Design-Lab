@@ -1,0 +1,93 @@
+|ASU_updated
+CONTROL => comb.IN0
+CONTROL => comb.IN0
+CONTROL => comb.IN0
+CONTROL => comb.IN0
+CONTROL => fullAdder:FA0.Cin
+X[0] => fullAdder:FA0.X
+X[1] => fullAdder:FA1.X
+X[2] => fullAdder:FA2.X
+X[3] => fullAdder:FA3.X
+Y[0] => comb.IN1
+Y[1] => comb.IN1
+Y[2] => comb.IN1
+Y[3] => comb.IN1
+A <= component_final:final.outA
+B <= component_final:final.outB
+C <= component_final:final.outC
+D <= component_final:final.outD
+Cout <= fullAdder:FA3.Cout
+OVERFLOW <= OVERFLOW.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ASU_updated|fullAdder:FA0
+X => sum.IN0
+X => Cout.IN1
+Y => sum.IN1
+Y => Cout.IN0
+Y => Cout.IN0
+Cin => sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ASU_updated|fullAdder:FA1
+X => sum.IN0
+X => Cout.IN1
+Y => sum.IN1
+Y => Cout.IN0
+Y => Cout.IN0
+Cin => sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ASU_updated|fullAdder:FA2
+X => sum.IN0
+X => Cout.IN1
+Y => sum.IN1
+Y => Cout.IN0
+Y => Cout.IN0
+Cin => sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ASU_updated|fullAdder:FA3
+X => sum.IN0
+X => Cout.IN1
+Y => sum.IN1
+Y => Cout.IN0
+Y => Cout.IN0
+Cin => sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ASU_updated|component_final:final
+I0 => outA.IN0
+I0 => outA.IN0
+I0 => outC.IN0
+I0 => outD.IN0
+I1 => outB.IN0
+I1 => outC.IN0
+I1 => outA.IN1
+I2 => outA.IN1
+I2 => outD.IN1
+I2 => outB.IN1
+I2 => outC.IN1
+I2 => outC.IN1
+outA <= outA.DB_MAX_OUTPUT_PORT_TYPE
+outB <= outB.DB_MAX_OUTPUT_PORT_TYPE
+outC <= outC.DB_MAX_OUTPUT_PORT_TYPE
+outD <= outD.DB_MAX_OUTPUT_PORT_TYPE
+
+

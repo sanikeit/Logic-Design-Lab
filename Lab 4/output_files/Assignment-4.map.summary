@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Tue May 04 13:07:35 2021
+Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+Revision Name : Assignment-4
+Top-level Entity Name : comparator_4_bit
+Family : Cyclone IV GX
+Total logic elements : 9
+    Total combinational functions : 9
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 11
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
