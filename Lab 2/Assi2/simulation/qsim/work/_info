@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/anike/OneDrive/Desktop/Quart/Assi2/simulation/qsim
+v\9 
+!s110 1619670694
+!i10b 1
+!s100 8j[cFzZgHX2iG[T]@d9E62
+I3F41>I<18`jdb_1SKb5h70
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1619670689
+Z2 8Assi2.vo
+Z3 FAssi2.vo
+Z4 L0 32
+Z5 OV;L;10.4b;61
+r1
+!s85 0
+31
+!s108 1619670694.000000
+Z6 !s107 Assi2.vo|
+Z7 !s90 -work|work|Assi2.vo|
+!i113 1
+Z8 o-work work
+n@1349@040
+vQ9
+Z9 !s110 1619670859
+!i10b 1
+!s100 na9alb1j9:J1mc?=HHMk00
+InA>dd?SKIZ72FoQ8?2k8U3
+R1
+R0
+w1619670857
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+Z10 !s108 1619670859.000000
+R6
+R7
+!i113 1
+R8
+n@q9
+vQ9_vlg_vec_tst
+R9
+!i10b 1
+!s100 6`efVOY`2ICR01[G`>OLd3
+I2JX[:7ENAI_HM;FU?I]ST2
+R1
+R0
+w1619670854
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+L0 30
+R5
+r1
+!s85 0
+31
+R10
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R8
+n@q9_vlg_vec_tst
