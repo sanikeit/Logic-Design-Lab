@@ -1,0 +1,47 @@
+|johnson_counter
+CLOCK => D_FF:D0.CLOCK
+CLOCK => D_FF:D1.CLOCK
+CLOCK => D_FF:D2.CLOCK
+CLOCK => D_FF:D3.CLOCK
+RESET => D_FF:D0.RESET
+RESET => D_FF:D1.RESET
+RESET => D_FF:D2.RESET
+RESET => D_FF:D3.RESET
+I[0] << D_FF:D0.I
+I[1] << D_FF:D1.I
+I[2] << D_FF:D2.I
+I[3] << D_FF:D3.I
+
+
+|johnson_counter|D_FF:D0
+D => I~reg0.DATAIN
+CLOCK => I~reg0.CLK
+RESET => I~reg0.ALOAD
+SET => I~reg0.ADATA
+I <= I~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|johnson_counter|D_FF:D1
+D => I~reg0.DATAIN
+CLOCK => I~reg0.CLK
+RESET => I~reg0.ALOAD
+SET => I~reg0.ADATA
+I <= I~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|johnson_counter|D_FF:D2
+D => I~reg0.DATAIN
+CLOCK => I~reg0.CLK
+RESET => I~reg0.ALOAD
+SET => I~reg0.ADATA
+I <= I~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|johnson_counter|D_FF:D3
+D => I~reg0.DATAIN
+CLOCK => I~reg0.CLK
+RESET => I~reg0.ALOAD
+SET => I~reg0.ADATA
+I <= I~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

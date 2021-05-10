@@ -1,0 +1,24 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+entity johnson_counter is
+Port (CLK: in STD_LOGIC;
+		RESET: in STD_LOGIC;
+		S: buffer STD_LOGIC_VECTOR (3 downto 0));
+end johnson_counter;
+
+architecture structural of johnson_counter is
+
+SIGNAL Q_0: STD_LOGIC;
+
+component D_FF is
+Port (D, CLK, RESET, temp: in STD_LOGIC;
+		Q: out STD_LOGIC);
+end component;
+
+begin
+	D0: D_FF port map(S(3), CLK, RESET, '0', Q_0);
+	S(0) <= not Q_0;
+	D1: D_FF port map(S(0), CLK, RESET, '0', S(1));
+	D2: D_FF port map(S(1), CLK, RESET, '0', S(2));
+	D3: D_FF port map(S(2), CLK, RESET, '0', S(3));
+end structural;
