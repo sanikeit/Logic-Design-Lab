@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/anike/OneDrive/Desktop/Lab 7/simulation/qsim
+vring
+!s110 1620620391
+!i10b 1
+!s100 i3BoUC7>`0ANX^5SdY_Hl1
+Ik3<mbFelCaecf19RQe@AS2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1620620385
+8Lab7.vo
+FLab7.vo
+L0 32
+Z2 OV;L;10.4b;61
+r1
+!s85 0
+31
+!s108 1620620391.000000
+!s107 Lab7.vo|
+!s90 -work|work|Lab7.vo|
+!i113 1
+Z3 o-work work
+vring_vlg_vec_tst
+!s110 1620620392
+!i10b 1
+!s100 M?WBKHUDRH3YDVNZL:FlC0
+IVN]3eb4z?0hzcOlC:D=6V0
+R1
+R0
+w1620620380
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R2
+r1
+!s85 0
+31
+!s108 1620620392.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R3

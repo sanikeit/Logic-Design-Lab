@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/PCHAKRABARTI/Desktop/IITI/SEMESTER-IV/CS256/Assignment-6/simulation/qsim
+vAssignment6
+Z1 !s110 1620449520
+!i10b 1
+!s100 BU8dV]^fP?E;akLiKP`>43
+I[STBLIzkWTZm?:W_GTQ9D3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/anike/OneDrive/Desktop/Assignment-6/Assignment-6/simulation/qsim
+w1620449519
+8Assignment6.vo
+FAssignment6.vo
+L0 32
+Z4 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z5 !s108 1620449520.000000
+!s107 Assignment6.vo|
+!s90 -work|work|Assignment6.vo|
+!i113 1
+Z6 o-work work
+n@assignment6
+vAssignment6_vlg_check_tst
+Z7 !s110 1620281082
+!i10b 1
+!s100 lFRk^G<?AJh0[0VRVT0Fl3
+IM]MDUAfA>lzLiI10aY?:K2
+Z8 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+Z9 w1620281080
+Z10 8Waveform.vwf.vt
+Z11 FWaveform.vwf.vt
+L0 62
+Z12 OV;L;10.3c;59
+r1
+!s85 0
+31
+Z13 !s108 1620281082.037000
+Z14 !s107 Waveform.vwf.vt|
+Z15 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R6
+n@assignment6_vlg_check_tst
+vAssignment6_vlg_sample_tst
+R7
+!i10b 1
+!s100 D>BHDQZ@5Y72@l:cY1eCW2
+I>QbUO^S2JzY9LIH`38=<Q1
+R8
+R0
+R9
+R10
+R11
+Z16 L0 30
+R12
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 1
+R6
+n@assignment6_vlg_sample_tst
+vAssignment6_vlg_vec_tst
+R1
+!i10b 1
+!s100 W]7H7=Hh@e_oCNK_J0N;R2
+IGQk6z_l3C848WN?nAzRSX0
+R2
+R3
+w1620449515
+R10
+R11
+R16
+R4
+r1
+!s85 0
+31
+R5
+R14
+R15
+!i113 1
+R6
+n@assignment6_vlg_vec_tst

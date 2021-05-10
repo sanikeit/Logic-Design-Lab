@@ -1,0 +1,14 @@
+|Assignment6
+U => clk1.IN0
+U => clk2.IN0
+U => clk3.IN0
+D => clk1.IN0
+D => clk2.IN0
+D => clk3.IN0
+clk => T0.CLK
+O0 << T0.DB_MAX_OUTPUT_PORT_TYPE
+O1 << T1.DB_MAX_OUTPUT_PORT_TYPE
+O2 << T2.DB_MAX_OUTPUT_PORT_TYPE
+O3 << T3.DB_MAX_OUTPUT_PORT_TYPE
+
+

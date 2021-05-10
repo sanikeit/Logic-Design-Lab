@@ -1,0 +1,47 @@
+|jring
+CLK => DFlipFlop:FF1.CLK
+CLK => DFlipFlop:FF4.CLK
+CLK => DFlipFlop:FF2.CLK
+CLK => DFlipFlop:FF3.CLK
+Q[0] <= Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|jring|DFlipFlop:FF1
+D => tp.OUTPUTSELECT
+D => tp.OUTPUTSELECT
+CLK => tp.CLK
+C => tp.ACLR
+Q1 <> Q1
+Q2 <> Q2
+
+
+|jring|DFlipFlop:FF4
+D => tp.OUTPUTSELECT
+D => tp.OUTPUTSELECT
+CLK => tp.CLK
+C => tp.ACLR
+Q1 <> Q1
+Q2 <> Q2
+
+
+|jring|DFlipFlop:FF2
+D => tp.OUTPUTSELECT
+D => tp.OUTPUTSELECT
+CLK => tp.CLK
+C => tp.ACLR
+Q1 <> Q1
+Q2 <> Q2
+
+
+|jring|DFlipFlop:FF3
+D => tp.OUTPUTSELECT
+D => tp.OUTPUTSELECT
+CLK => tp.CLK
+C => tp.ACLR
+Q1 <> Q1
+Q2 <> Q2
+
+
