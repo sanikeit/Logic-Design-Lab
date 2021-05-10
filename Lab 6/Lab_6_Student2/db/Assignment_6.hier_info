@@ -1,0 +1,35 @@
+|updown_4bit_counter
+Clk => t_ff:t_ff0.Clk
+M => next_clk[0].IN1
+M => next_clk[1].IN1
+M => next_clk[2].IN1
+Q[0] <= t_ff:t_ff0.Q
+Q[1] <= t_ff:t_ff1.Q
+Q[2] <= t_ff:t_ff2.Q
+Q[3] <= t_ff:t_ff3.Q
+
+
+|updown_4bit_counter|t_ff:t_ff0
+T => temp.ENA
+Clk => temp.CLK
+Q <= temp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|updown_4bit_counter|t_ff:t_ff1
+T => temp.ENA
+Clk => temp.CLK
+Q <= temp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|updown_4bit_counter|t_ff:t_ff2
+T => temp.ENA
+Clk => temp.CLK
+Q <= temp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|updown_4bit_counter|t_ff:t_ff3
+T => temp.ENA
+Clk => temp.CLK
+Q <= temp.DB_MAX_OUTPUT_PORT_TYPE
+
+
